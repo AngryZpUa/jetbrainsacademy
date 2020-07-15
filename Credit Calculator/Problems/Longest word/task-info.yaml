@@ -9,5 +9,9 @@ files:
     # How many letters does the longest word contain?
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/8437
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/8437">JetBrains
+    Academy</a></html>
+  time: Wed, 01 Jul 2020 15:39:58 UTC
 record: -1

@@ -12,5 +12,9 @@ files:
     # use capwords() here
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7177
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7177">JetBrains
+    Academy</a></html>
+  time: Wed, 01 Jul 2020 23:22:04 UTC
 record: -1

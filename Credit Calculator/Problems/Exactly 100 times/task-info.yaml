@@ -7,5 +7,9 @@ files:
     # put your python code here
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6716
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/6716">JetBrains
+    Academy</a></html>
+  time: Tue, 14 Jul 2020 14:50:08 UTC
 record: -1

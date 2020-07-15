@@ -13,5 +13,9 @@ files:
             count += 1
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7199
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7199">JetBrains
+    Academy</a></html>
+  time: Tue, 14 Jul 2020 16:27:48 UTC
 record: -1

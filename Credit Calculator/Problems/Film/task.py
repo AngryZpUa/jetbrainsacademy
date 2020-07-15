@@ -1,0 +1,5 @@
+film_name = input()
+film_director = input()
+film_year = int(input())
+full_string = "{0} (dir. {1}) came out in {2}".format(film_name, film_director, film_year)
+print(full_string)

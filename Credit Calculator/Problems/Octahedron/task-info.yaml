@@ -4,5 +4,9 @@ files:
   visible: true
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/6346
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/6346">JetBrains
+    Academy</a></html>
+  time: Fri, 03 Jul 2020 09:05:07 UTC
 record: -1

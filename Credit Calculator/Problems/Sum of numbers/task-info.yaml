@@ -8,5 +8,9 @@ files:
     # the variables `x` and `y` are defined, so just print their sum
   learner_created: false
 feedback_link: https://hyperskill.org/learn/step/7175
-status: Unchecked
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7175">JetBrains
+    Academy</a></html>
+  time: Wed, 01 Jul 2020 15:38:23 UTC
 record: -1
