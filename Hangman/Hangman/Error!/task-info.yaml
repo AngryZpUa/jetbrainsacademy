@@ -287,5 +287,23 @@ files:
     # Write your code here
   learner_created: false
 feedback_link: https://hyperskill.org/projects/69/stages/378/implement
-status: Unchecked
+status: Failed
+feedback:
+  message: "Wrong answer in test #1\n\nBefore: --v---ri--\nLetter: d\nAfter : --v---ri--\n\
+    \nThere is no \"You already typed this letter\" message, but should be\nInput\
+    \ letters: \nd\no\nv\nv\ny\nr\nu\ni\nh\ni\nf\nd\n\nPlease find below the output\
+    \ of your program during this failed test.\nNote that the '>' character indicates\
+    \ the beginning of the input line.\n\n---\n\nH A N G M A N\n\n----------\nInput\
+    \ a letter: > d\nNo such letter in the word\n\n----------\nInput a letter: > o\n\
+    No such letter in the word\n\n----------\nInput a letter: > v\n\n--v-------\n\
+    Input a letter: > v\nYou already typed this letter\n\n--v-------\nInput a letter:\
+    \ > y\nNo such letter in the word\n\n--v-------\nInput a letter: > r\n\n--v---r---\n\
+    Input a letter: > u\nNo such letter in the word\n\n--v---r---\nInput a letter:\
+    \ > C\nIt is not an ASCII lowercase letter\n\n--v---r---\nInput a letter: > i\n\
+    \n--v---ri--\nInput a letter: > h\nNo such letter in the word\n\n--v---ri--\n\
+    Input a letter: > i\nYou already typed this letter\n\n--v---ri--\nInput a letter:\
+    \ > f\nNo such letter in the word\n\n--v---ri--\nInput a letter: > d\nNo such\
+    \ letter in the word\n\n--v---ri--\nInput a letter: > z\nNo such letter in the\
+    \ word\nYou are hanged!"
+  time: Mon, 27 Jul 2020 14:19:03 UTC
 record: -1
