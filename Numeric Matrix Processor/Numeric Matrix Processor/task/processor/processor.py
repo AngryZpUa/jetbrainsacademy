@@ -3,6 +3,7 @@ def input_matrix_size_and_elements():
     rows = int(matrix_str_size[0])
     column = int(matrix_str_size[1])
     result = []
+    print('Enter matrix:')
     for _ in range(rows):
         row = []
         str_elements = input().split()
@@ -74,6 +75,47 @@ def transposition(matrix_a, transposition_type):
     return result
 
 
+def determinant_matrix(matrix_a):
+    if len(matrix_a) == 1 and len(matrix_a[0]) == 1:
+        return matrix_a[0][0]
+    elif len(matrix_a) == 2 and len(matrix_a) == 2:
+        return matrix_a[0][0] * matrix_a[1][1] - matrix_a[0][1] * matrix_a[1][0]
+    else:
+        summa = 0
+        for i in range(len(matrix_a)):
+            matrix = []
+            for j in range(len(matrix_a)):
+                if i != j:
+                    row = matrix_a[j][1:]
+                    matrix.append(row)
+            if i % 2 == 0:
+                summa += matrix_a[i][0] * determinant_matrix(matrix)
+            else:
+                summa -= matrix_a[i][0] * determinant_matrix(matrix)
+        return summa
+
+
+def adj_matrix(matrix_a):
+    result = []
+    for i in range(len(matrix_a)):
+        result_row = []
+        for j in range(len(matrix_a[0])):
+            matrix = []
+            for k in range(len(matrix_a)):
+                if k != i:
+                    row = []
+                    for l in range(len(matrix_a[0])):
+                        if l != j:
+                            row.append(matrix_a[k][l])
+                    matrix.append(row)
+            det_matrix = determinant_matrix(matrix)
+            if (i + j) % 2 != 0:
+                det_matrix *= -1
+            result_row.append(det_matrix)
+        result.append(result_row)
+    return transposition(result, '1')
+
+
 def print_matrix(matrix_a):
     print('The result is:')
     for i in range(len(matrix_a)):
@@ -89,6 +131,8 @@ while True:
     print('2. Multiply matrix by a constant')
     print('3. Multiply matrices')
     print('4. Transpose matrix')
+    print('5. Calculate a determinant')
+    print('6. Inverse matrix')
     print('0. Exit')
     main_menu_choice = input('Your choice:')
     if main_menu_choice == '0':
@@ -122,3 +166,16 @@ while True:
         a = input_matrix_size_and_elements()
         b = transposition(a, transpose_menu_choice)
         print_matrix(b)
+    elif main_menu_choice == '5':
+        a = input_matrix_size_and_elements()
+        print('The result is:')
+        print(determinant_matrix(a))
+    elif main_menu_choice == '6':
+        a = input_matrix_size_and_elements()
+        det = determinant_matrix(a)
+        if det == 0:
+            print("This matrix doesn't have an inverse")
+        else:
+            b = adj_matrix(a)
+            c = matrix_multiply_number(b, 1 / det)
+            print_matrix(c)
