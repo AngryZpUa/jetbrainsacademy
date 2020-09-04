@@ -29,7 +29,9 @@ while True:
     print("1) Today's tasks")
     print("2) Week's tasks")
     print('3) All tasks')
-    print('4) Add task')
+    print('4) Missed tasks')
+    print('5) Add task')
+    print('6) Delete task')
     print('0) Exit')
     user_choice = input()
     print()
@@ -68,6 +70,14 @@ while True:
             for i in range(len(rows)):
                 print("{}. {}. {} {}".format(i+1, rows[i].task, rows[i].deadline.strftime("%-d"), rows[i].deadline.strftime("%b")))
     elif user_choice == '4':
+        print('Missed tasks:')
+        rows = session.query(Task).filter(datetime.now() > Task.deadline).all()
+        if len(rows) == 0:
+            print('Nothing is missed!!')
+        else:
+            for i in range(len(rows)):
+                print("{}. {}".format(i + 1, rows[i].task))
+    elif user_choice == '5':
         print('Enter task')
         task_description = input()
         print('Enter deadline')
@@ -77,4 +87,16 @@ while True:
         session.add(new_row)
         session.commit()
         print('The task has been added!')
+    elif user_choice == '6':
+        print('Choose the number of the task you want to delete:')
+        rows = session.query(Task).all()
+        if len(rows) == 0:
+            print('Nothing to delete')
+        else:
+            for i in range(len(rows)):
+                print("{}. {}. {} {}".format(i+1, rows[i].task, rows[i].deadline.strftime("%-d"), rows[i].deadline.strftime("%b")))
+            delete_input = int(input())
+            session.delete(rows[delete_input-1])
+            session.commit()
+            print('The task has been deleted!')
     print()
