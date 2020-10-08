@@ -1,0 +1,37 @@
+content:
+- Ord() application
+- Chr() application
+- Caesar cipher
+- Printable
+- To_bytes()
+- Bytes slices
+- Decypher a message
+- Zero bytes
+- Connect and send the data
+- Replace lambda with def
+- Turn into a lambda function
+- Re-write using lambda functions
+- Nested functions
+- Multiplying lists
+- Filter out negative numbers
+- Re-write using map( ) and filter( )
+- Analyzing daily temperatures
+- Analyzing exam results
+- Fortuneteller
+- Letters of a word
+- Fibonacci sequence
+- Squares
+- Even numbers
+- Students
+- Multilingual dictionary
+- Word constructor
+- Calculating profit
+- Vector sum
+- Restaurant
+- Flower shop
+- Football tournament
+- Choosing a name
+- Colors
+- Years and years
+- Number of users
+- JSON input
