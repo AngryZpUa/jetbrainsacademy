@@ -34,6 +34,9 @@ files:
                                          "where ... is the name of the language.")
             reply = reply.lower().strip()
             bonjour_index = reply.index('bonjour')
+            if 'examples' not in reply[bonjour_index:]:
+                return CheckResult.wrong("Context examples should follow translations.\n"
+                                         "It looks like in your program they go in the opposite order.")
             example_index = reply[bonjour_index:].index('examples') + bonjour_index
             translations_slice = reply[bonjour_index:example_index]
             if len(translations_slice.split('\n')) < 4:
@@ -51,5 +54,9 @@ files:
         TranslatorTest('translator.translator').run_tests()
   learner_created: false
 feedback_link: https://hyperskill.org/projects/99/stages/545/implement#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations! Continue on <a href="https://hyperskill.org/projects/99/stages/545/implement">JetBrains
+    Academy</a>
+  time: Wed, 11 Nov 2020 19:04:12 UTC
+record: 3

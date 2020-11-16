@@ -15,21 +15,22 @@ CheckResult.wrong = lambda feedback: CheckResult(False, feedback)
 class TranslatorTest(StageTest):
     def generate(self):
         return [
-            TestCase(stdin='fr\nhello\n'),
+            TestCase(args=['english', 'all', 'brrrrrrrrrrr'], check_function=self.check1),
+            TestCase(args=['english', 'korean', 'hello'], check_function=self.check2)
         ]
 
-    def check(self, reply, attach):
-        if '200 OK' not in reply:
-            return CheckResult.wrong("There isn't internet connection identificator.")
+    def check1(self, reply, attach):
+        reply = reply.lower()
+        if 'unable' not in reply:
+            return CheckResult.wrong('You didn\'t do a test for a nonexistent word.')
+        return CheckResult.correct()
 
-        print(reply.count('['))
-        print('Translation' in reply)
-
-        if reply.count('[') >= 2 and 'Translation' in reply:
+    def check2(self, reply, attach):
+        if 'support korean' in reply.lower():
             return CheckResult.correct()
 
-        return CheckResult.wrong("Try to print lists of translations in both "
-                                 "stages or not to delete first word 'Translation' from it")
+        return CheckResult.wrong(
+            'You didn\'t correctly write that your program doesn\'t support a particular language.')
 
 
 if __name__ == '__main__':
