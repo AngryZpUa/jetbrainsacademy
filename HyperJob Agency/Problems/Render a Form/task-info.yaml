@@ -1,0 +1,18 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    template = """
+    <form>{% csrf_token %}
+      <ul> ??? </ul>
+    </form>
+    """
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7654#comment
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7654#comment">JetBrains
+    Academy</a></html>
+  time: Sun, 22 Nov 2020 17:12:51 UTC
+record: -1

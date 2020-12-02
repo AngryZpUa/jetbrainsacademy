@@ -3,7 +3,7 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/303588/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Wed, 18 Nov 2020 13:52:39 UTC
+update_date: Wed, 02 Dec 2020 14:06:29 UTC
 stages:
 - id: 519
   step: 8598
@@ -13,13 +13,13 @@ stages:
   is_completed: true
 - id: 521
   step: 8600
-  is_completed: false
+  is_completed: true
 - id: 522
   step: 8601
-  is_completed: false
+  is_completed: true
 - id: 523
   step: 8602
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: Files
@@ -28,10 +28,14 @@ topics:
     theory_id: 3614
   - title: Inheritance
     theory_id: 9844
+  - title: Polymorphism
+    theory_id: 10027
   - title: The concept of patterns
     theory_id: 3611
   - title: Frameworks
     theory_id: 6701
+  - title: Immutability
+    theory_id: 7929
   - title: Data and object mapping
     theory_id: 8262
   - title: Introduction to databases
@@ -52,6 +56,8 @@ topics:
     theory_id: 5208
   - title: Multi-line programs
     theory_id: 5233
+  - title: Program execution
+    theory_id: 6047
   - title: PEP 8
     theory_id: 5879
   - title: Comments
@@ -64,26 +70,52 @@ topics:
     theory_id: 5872
   - title: List
     theory_id: 5979
+  - title: Indexes
+    theory_id: 6189
+  - title: Dictionary
+    theory_id: 6481
+  - title: Tuple
+    theory_id: 7462
   - title: Invoking a function
     theory_id: 5891
   - title: Declaring a function
     theory_id: 5900
   - title: Scopes
     theory_id: 6322
+  - title: Arguments
+    theory_id: 7248
+  - title: Operations with list
+    theory_id: 6031
   - title: If statement
     theory_id: 5953
   - title: Else statement
     theory_id: 5932
   - title: Elif statement
     theory_id: 5926
+  - title: For loop
+    theory_id: 6065
   - title: Functional decomposition
     theory_id: 9571
+  - title: Dictionary methods
+    theory_id: 9008
+  - title: Operations with dictionary
+    theory_id: 11096
+  - title: Default arguments
+    theory_id: 10295
+  - title: Args
+    theory_id: 8560
+  - title: Kwargs
+    theory_id: 9544
   - title: Load module
     theory_id: 6019
   - title: Create module
     theory_id: 6057
   - title: Packages
     theory_id: 6384
+  - title: Errors
+    theory_id: 6052
+  - title: Exceptions
+    theory_id: 6042
   - title: Class
     theory_id: 6661
   - title: Class instances
@@ -96,6 +128,8 @@ topics:
     theory_id: 7139
   - title: Inheritance
     theory_id: 7235
+  - title: Method overriding
+    theory_id: 7629
   - title: Datetime module
     theory_id: 7324
   - title: Introduction to operating systems
@@ -120,6 +154,8 @@ topics:
     theory_id: 5865
   - title: Quotes and multi-line strings
     theory_id: 5814
+  - title: Escape sequences
+    theory_id: 7130
   - title: Variables
     theory_id: 5859
   - title: String formatting
@@ -128,11 +164,15 @@ topics:
     theory_id: 6025
   - title: Comparisons
     theory_id: 5920
+  - title: Identity testing
+    theory_id: 8077
+  - title: Basic string methods
+    theory_id: 6842
+  - title: Objects in Python
+    theory_id: 9262
+  - title: Split and join
+    theory_id: 6972
   1:
-  - title: Polymorphism
-    theory_id: 10027
-  - title: Immutability
-    theory_id: 7929
   - title: Bugs and debugging
     theory_id: 5504
   - title: World Wide Web
@@ -145,40 +185,10 @@ topics:
     theory_id: 6752
   - title: Regexps basics
     theory_id: 7580
-  - title: Program execution
-    theory_id: 6047
   - title: Introduction to Python shell
     theory_id: 8133
-  - title: Indexes
-    theory_id: 6189
-  - title: Dictionary
-    theory_id: 6481
-  - title: Tuple
-    theory_id: 7462
-  - title: Arguments
-    theory_id: 7248
-  - title: Operations with list
-    theory_id: 6031
-  - title: For loop
-    theory_id: 6065
-  - title: Dictionary methods
-    theory_id: 9008
-  - title: Operations with dictionary
-    theory_id: 11096
-  - title: Default arguments
-    theory_id: 10295
-  - title: Args
-    theory_id: 8560
-  - title: Kwargs
-    theory_id: 9544
   - title: Experiments with Python shell
     theory_id: 8238
-  - title: Errors
-    theory_id: 6052
-  - title: Exceptions
-    theory_id: 6042
-  - title: Method overriding
-    theory_id: 7629
   - title: Debugging in shell
     theory_id: 8244
   - title: Launching web server
@@ -197,21 +207,17 @@ topics:
     theory_id: 6491
   - title: Inline Elements
     theory_id: 7518
-  - title: Escape sequences
-    theory_id: 7130
-  - title: Identity testing
-    theory_id: 8077
-  - title: Basic string methods
-    theory_id: 6842
-  - title: Objects in Python
-    theory_id: 9262
-  - title: Split and join
-    theory_id: 6972
   2:
   - title: Design principles
     theory_id: 8956
   - title: While loop
     theory_id: 5940
+  - title: Files in Python
+    theory_id: 8691
+  - title: Reading files
+    theory_id: 8139
+  - title: Built-in exceptions
+    theory_id: 11680
   - title: Exception handling
     theory_id: 6270
   - title: Queries and filters

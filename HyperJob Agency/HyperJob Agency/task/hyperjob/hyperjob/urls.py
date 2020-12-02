@@ -15,9 +15,22 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from menu.views import MyIndexView
+from django.views.generic import RedirectView
+from menu.views import MyIndexView, MySignUpView, MyLoginView, MyProfileView
+from resume.views import ResumeView, NewResumeView
+from vacancy.views import VacancyView, NewVacancyView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', MyIndexView.as_view()),
+    path('', MyIndexView.as_view(), name='root_dir'),
+    path('resumes', ResumeView.as_view()),
+    path('vacancies', VacancyView.as_view()),
+    path('login/', RedirectView.as_view(url='/login')),
+    path('signup/', RedirectView.as_view(url='/signup')),
+    path('signup', MySignUpView.as_view()),
+    path('login', MyLoginView.as_view()),
+    path('main_menu/', RedirectView.as_view(url='')),
+    path('home', MyProfileView.as_view(), name='home'),
+    path('resume/new', NewResumeView.as_view()),
+    path('vacancy/new', NewVacancyView.as_view()),
 ]

@@ -1,0 +1,19 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    template = """
+    <form action="post">
+      <input type="hidden" name="drink_id" value=???>
+      <button type="submit">Order it!</button>
+    </form>
+    """
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7644#comment
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7644#comment">JetBrains
+    Academy</a></html>
+  time: Sat, 21 Nov 2020 10:43:37 UTC
+record: -1
