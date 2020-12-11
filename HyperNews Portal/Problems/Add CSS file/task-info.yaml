@@ -1,0 +1,18 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    template = """
+    <html>
+      {% load ... %}
+      <link rel="stylesheet" href="{% ... %}">
+    </html>
+    """
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10057#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Thu, 10 Dec 2020 14:48:27 UTC
+record: -1
